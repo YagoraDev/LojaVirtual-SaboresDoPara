@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+header {
+    background-color: rgb(116, 116, 190);
+    color: #fff;
+    text-align: left;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    
+  }
+
+header img {
+    align-items: center;
+    padding: 5px 20px;
+}
+
+header h1 {
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+nav button {
+    background-color: rgb(183, 77, 77);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+}
+
+nav button:hover {
+    background-color: rgb(79, 206, 79);
+}
+
+main {
+    padding: 20px;
+}
+
+.destaques,
+.categorias {
+    margin-bottom: 30px;
+}
+
+.destaques h2,
+.categorias h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product {
+    width: 200px;
+    height: 300px; 
+    margin-right: 20px; 
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.product img {
+  width: 100%; /* Ajuste para garantir que a imagem ocupe todo o espaço disponível */
+  height: 200px; /* Altura fixa para manter a proporção */
+  object-fit: cover; /* Garante que a imagem cubra todo o espaço, mantendo a proporção */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product h3 {
+    margin-top: 0;
+}
+
+.product p {
+    margin: 5px 0;
+}
+
+.product button {
+    width: 100%;
+    background-color: rgb(183, 77, 77);
+    color: white;
+    padding: 8px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.product button:hover {
+    background-color: rgb(79, 206, 79);
+}  
+
+@media screen and (max-width: 960px) {
+  header h1 {
+    margin-right: 320px;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  header h1 {
+    margin-right: 480px;
+  }
+}
+
+
+@media screen and (max-width: 1600px) {
+  header h1 {
+    margin-right: 640px;
+  }
+}
+
+
+@media screen and (max-width: 960px) {
+  header {
+    padding: 10px;
+  }
+
+  header h1 {
+    margin-right: 10px;
+  }
+
+  header a {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  header button {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  header h1 {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+}
+
+footer {
+  background-color: rgb(116, 116, 190);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}

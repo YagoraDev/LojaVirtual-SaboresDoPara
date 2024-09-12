@@ -1,0 +1,133 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  background-image: url(imagens/login.jpg);
+  background-size: cover; /* Garante que a imagem cubra toda a tela */
+  background-position: center; /* Centraliza a imagem na tela */
+}
+
+header {
+  background-color: rgb(116, 116, 190);
+  color: #fff;
+  text-align: left;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  margin-right: 10px;
+}
+
+.logo-container h1 {
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+header button {
+  font-size: 20px;
+}
+
+/* Estilos para o formulário */
+form {
+  border: 1px solid black;
+  width: 500px;
+  background-color: rgb(116, 116, 190);
+  color: white;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+form h1 {
+  text-align: center;
+}
+
+.cadastro {
+  margin-left: 120px;
+  font-size: 20px;
+}
+
+form a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+label {
+  display: block;
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+input {
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 5px;
+  width: calc(100% - 20px);
+  margin: 0 10px 10px;
+}
+
+.botao-verde {
+  background-color: rgb(183, 116, 116);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+  font-size: 20px;
+  width: calc(100% - 20px);
+}
+
+/* Estilos para o rodapé */
+footer {
+  background-color: rgb(116, 116, 190);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Media queries */
+@media only screen and (max-width: 960px) {
+  .nav-links {
+    display: none;
+  }
+
+  header h1 {
+    margin-right: 10px;
+  }
+
+  input, .botao-verde {
+    width: calc(100% - 20px);
+    margin: 0 10px 10px;
+  }
+
+  form {
+    width: 80%;
+    margin: 50px auto;
+  }
+}
